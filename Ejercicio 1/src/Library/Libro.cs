@@ -11,6 +11,10 @@ namespace SRP
         public string LibrarySector { get ; set; }
         public string LibraryShelve { get ; set; }
 
+        // Al igual que el metodo ShelveBook, el string LibrarySector y el string
+        // LibraryShelve deben ir a otra clase para cumplir con SRP, dado que
+        // no le corresponde tener esta responsabilidad a la clase Book
+
         public Book(String title, String author, String code)
         {
             this.Title = title;
@@ -18,6 +22,9 @@ namespace SRP
             this.Code = code;
         }
 
+        // La clase libro deberia de tener menos responsabilidad, incumple con SRP
+        // SRP tiene que tener 1 responsabilidad o una que se complemente por clase
+        // Este metodo deberia de estar en otra clase
         public void ShelveBook(String sector, String shelve)
         {
             this.LibrarySector = sector;

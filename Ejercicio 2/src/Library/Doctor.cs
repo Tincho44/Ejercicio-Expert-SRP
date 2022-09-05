@@ -3,6 +3,8 @@ using System.Text;
 
 namespace Library
 {
+    // Esta clase se cumple con el fin de cumplir con SRP y Expert, guardando asi la informacion que unicamente le intersa a esta clase respecto al doctor
+    // al igual que esta clase solo tiene una razon de ser
     public class Doctor
     {
         public string name {get;}      

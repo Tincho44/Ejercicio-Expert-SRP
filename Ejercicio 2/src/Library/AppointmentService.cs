@@ -18,6 +18,9 @@ namespace Library
             StringBuilder stringBuilder = new StringBuilder("Scheduling appointment...\n");
             Boolean isValid = true;
 
+            StringBuilder UniqueCode  = new StringBuilder("New code...\n");
+            // este es el codigo unico que pide la letra
+
             if (string.IsNullOrEmpty(name))
             {
                 stringBuilder.Append("Unable to schedule appointment, 'name' is required\n");
